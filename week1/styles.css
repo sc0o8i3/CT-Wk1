@@ -192,24 +192,6 @@ body {
     background-color: white;
 }
 
-.card-back-1 {
-  background-color: #95bbfe;
-  color: white;
-  transform: rotateY(180deg);
-}
-
-.card-back-2 {
-  background-color: #9ea0c8;
-  color: white;
-  transform: rotateY(180deg);
-}
-
-.card-back-3 {
-  background-color: white;
-  color: white;
-  transform: rotateY(180deg);
-}
-
 .footer {
     background-color: black;
     display: flex;
