@@ -23,6 +23,7 @@ body {
     background-color: #d1cbcf;
     border-bottom: 1px solid;
     box-shadow: 0 2px 12px;
+    width: 100%;
 }
 
 .menu {
@@ -200,7 +201,6 @@ body {
     justify-content:space-around;
     align-items: center;
     padding: 10px 30px;
-    margin: 0 0 50px 0;
 }
 
 .footer ul li {
