@@ -32,10 +32,19 @@ body {
     .nav {
         justify-content: center;
     }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    #card {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 300px) {
-    
+
 }
 
 .menu {
