@@ -168,6 +168,7 @@ body {
 
 .card h2 {
     padding: 10px;
+    border-top: 1px solid gray;
 }
 
 .card p {
@@ -180,7 +181,6 @@ body {
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-    border-bottom: 1px solid gray;
 }
 
 .proj-card-img-container img {
