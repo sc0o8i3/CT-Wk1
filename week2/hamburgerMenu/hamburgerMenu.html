@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Hamburger Menu Icon CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="styles.css" class="stylesheet">
+    <title>Hamburger Menu</title>
+</head>
+<body>
+    <div class="main">
+    <!-- Nav Bar -->
+     <nav class="nav">
+
+            <a href="#"><img src="https://onedrive.live.com/personal/1ea707056760562a/Documents/Project%20Images/Wk1/peterpastorlogo.png" alt="peterpastorlogo" border="0" height="50"></a>
+
+            <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+            <ul id="menu" class="menu">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+    </nav>
+
+     <!-- Main Content -->
+      <div class="content">
+        <h1>Hamburger Menu Practice</h1>
+        <p>Sample page to practice hamburger menu for responsive measures</p>
+      </div>
+
+      </div>
+
+      <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+      </script>
+
+</body>
+</html>

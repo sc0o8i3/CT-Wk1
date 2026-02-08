@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Style */
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 30px;
+    margin: 0 0 50px 0;
+    background-color: #d1cbcf;
+    border-bottom: 1px solid;
+    box-shadow: 0 2px 12px;
+    width: 100%;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu-toggle {
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav ul li {
+    list-style: none;
+}
+
+.nav ul li a {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav ul li a:hover {
+    color: black;    
+    animation-name: shake;
+    /* Adjust duration and iteration count for different effects (e.g., 0.5s infinite) */
+    animation-duration: 0.5s; 
+    /* 'infinite' makes it shake as long as hovered; 'once' makes it run only once */
+    animation-iteration-count: infinite; 
+    animation-timing-function: linear; /* Ensures consistent speed */
+    /* Ensures inline elements can have transforms applied */
+    display: inline-block
+}
+
+/* 2. Define the @keyframes animation */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-3px); } /* Move left */
+  50% { transform: translateX(3px); }  /* Move right */
+  75% { transform: translateX(-3px); } /* Move left */
+  100% { transform: translateX(0); }
+}
+
+.content {
+    padding: 20px;
+}
+
+@media (max-width:599px) {
+    /* Showing Hamburger Icon when in mobile view */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Hiding normal menu when in mobile view */
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        background-color: #d1cbcf;
+        left: 0;
+        right: 0;
+        padding: 20px 0px;
+        z-index: 1;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
