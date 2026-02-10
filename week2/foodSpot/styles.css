@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Popps:wght@400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+}
+
+.logo {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 2.5em;
+}
+
+header .logo span {
+    color: darkred;
+}
+
+header .nav {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+header .nav li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+header .nav li a:hover {
+    color:darkred;
+}
+
+.banner {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url('https://i.postimg.cc/s29LNR86/bg.jpg');
+    background-size: cover;
+}
+
+.banner .content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    width: 45%;
+}
+
+.banner .content h2 {
+    font-size: 50px;
+}
+
+.banner .content .btn {
+    color: white;
+    margin: 25px;
+    text-decoration: none;
+}
+
+.btn span {
+    background-color: darkred;
+    padding: 7px;
+}
+
+.about {
+    padding: 50px;
+}
+
+.about .content {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.about .content .col50 {
+    width: 50%;
+    padding: 20px;
+}
+
+.about .content span {
+    color: darkred;
+    font-size: larger;
+}
+
+.about .content .col50 img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.menu {
+    color: black;
+    padding-bottom: 50px;
+}
+
+.menu .menu-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.menu .menu-container h2 span {
+    color: darkred;
+    font-size: larger;
+}
+
+.menu .items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu .items-container h2 {
+
+}
+
+.menu .itemcard {
+    border: 1px solid gray;
+    width: 15%;
+    padding: 5px;
+    box-shadow: 0 2px 5px gray;
+
+}
+
+.menu .itemcard p {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.menu .itemcard img {
+    width: 100%;
+    height: 100%;
+}
