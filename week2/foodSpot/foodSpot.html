@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hamburger Menu Icon CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    
+    <!-- Local CSS -->
     <link rel="stylesheet" href="styles.css" class="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <!-- Header Section -->
-     <header>
-        <a href="#" class="logo">Food<span>Spot</span></a>
+     <header class="floatnav">
+        <nav class="nav">
+            <a href="#" class="logo">Food<span>Spot</span></a>
 
-        <ul class="nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Expert</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
+            <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+            <ul class="menu" id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Expert</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
      </header>
 
      <!-- Hero Banner Section -->
@@ -52,8 +59,8 @@
        </section>
 
        <!-- Menu Section -->
-       <section class="menu">
-        <div class="menu-container">
+       <section class="foodmenu">
+        <div class="foodmenu-container">
             <h2>Our <span>M</span>enu</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, enim.</p>
         </div>
@@ -95,7 +102,7 @@
                 <p>Cold Drinks</p>
             </div>
         </div>
-        <div class="menu-btn">
+        <div class="foodmenu-btn">
                 <p><span><a href="#">View All</a></span></p>
             </div>
        </section>
@@ -204,12 +211,21 @@
 
        <!-- Footer Section -->
        <footer class="footer">
-        <p>Coding Temple - FoodSpot Exercise</p>
+        <p>Coding Temple - FoodSpot Exercise - Peter Pastor</p>
         <ul class="nav">
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Terms of Use</a></li>
             <li><a href="#">Contact Info</a></li>
         </ul>
        </footer>
+
+       <!-- JS to listen to when hamburger menu is clicked and unclicked -->
+       <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+      </script>
+
 </body>
 </html>
