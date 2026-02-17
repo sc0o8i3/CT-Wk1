@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" class="style">
+    <title>WinDome Event Center - About Us</title>
+</head>
+<body>
+    <header class="header-container">
+        <nav class="nav">
+            <a href="#" class="logo"><span>WinDome</span> Center</a>
+
+            <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+            <ul class="menu" id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Us Blurb -->
+    <section class="about-container">
+        <div class="content">
+            <div class="col50">
+                <!-- section explaining what the WinDome Event Center provides -->
+            </div>
+            <div class="col50">
+                <!-- Image or Video of the Event Center -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer-container">
+        <p>Coding Temple - FoodSpot Exercise - Peter Pastor</p>
+        <ul class="nav">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Contact Info</a></li>
+        </ul>
+    </section>
+
+    <!-- JS to listen to when hamburger menu is clicked and unclicked -->
+       <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+      </script>
+</body>
+</html>

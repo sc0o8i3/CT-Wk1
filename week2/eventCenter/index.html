@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Hamburger Menu Icon CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="styles.css" class="stylesheet">
+    <title>Your Event, Your Way... - WinDome Center</title>
+</head>
+<body>
+    <header class="header-container">
+        <nav class="nav">
+            <a href="#" class="logo"><span>WinDome</span> Center</a>
+
+            <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+            <ul class="menu" id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-container">
+        <div class="content">
+            <h1>Welcome to the WinDome Event Center!</h1>
+            <p>Your Event, Your Way!</p>
+        </div>
+    </section>
+
+    <!-- Main Section -->
+    <section class="main-container">
+        <div class="content">
+            <!-- Show cards of possible events: wedding, conferences, concert, tradeshow -->
+        </div>
+    </section>
+
+    <!-- Location/Maps Section -->
+    <section class="loc-container">
+        <div class="content">
+            <div class="col50">
+                <!-- small section explaining where we're located -->
+            </div>
+            <div class="col50">
+                <!-- map of actual location -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer-container">
+        <p>Coding Temple - FoodSpot Exercise - Peter Pastor</p>
+        <ul class="nav">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Contact Info</a></li>
+        </ul>
+    </section>
+
+    <!-- JS to listen to when hamburger menu is clicked and unclicked -->
+       <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+      </script>
+</body>
+</html>
