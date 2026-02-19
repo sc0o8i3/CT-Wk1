@@ -17,7 +17,7 @@ header {
     padding: 40px 100px;
 }
 
-.floatnav {
+.header-container {
   background: #fff;
   padding: 10px 100px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
@@ -31,7 +31,7 @@ header {
 }
 
 header .logo span {
-    color: #ff0157;
+    color: lightskyblue;
 }
 
 header .nav {
@@ -50,7 +50,7 @@ header .nav li a {
 }
 
 header .nav li a:hover {
-    color:#ff0157;
+    color:lightskyblue;
 }
 
 .banner {
@@ -59,7 +59,7 @@ header .nav li a:hover {
     justify-content: center;
     align-items: center;
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-              url('https://i.postimg.cc/s29LNR86/bg.jpg');
+              url('media/images/generated-image-1771282141.png');
     background-size: cover;
 }
 
@@ -76,8 +76,14 @@ header .nav li a:hover {
     margin:50px 0;
 }
 
+.banner .content h1 {
+    font-size: 60px;
+    color: lightskyblue;
+}
+
 .banner .content h2 {
-    font-size: 50px;
+    font-size: 40px;
+    color: white;
 }
 
 .banner .content .btn {
@@ -85,15 +91,24 @@ header .nav li a:hover {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.5em; 
+    margin: 30px;
+}
+
+.banner .btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn a:hover {
+    color: lightskyblue;
 }
 
 .btn span {
-    background-color: #ff0157;
+    background-color: rgba(0,0,0,0.5);
     padding: 7px;
-}
-
-.btn span:hover {
-    color: #000;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 10px;
 }
 
 .about {
@@ -115,11 +130,39 @@ header .nav li a:hover {
 }
 
 .about .content span {
-    color: #ff0157;
+    color: lightskyblue;
     font-size: 1.5em;
 }
 
 .about .content .col50 img {
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+}
+
+.loc-container {
+    padding: 50px;
+}
+
+.loc-container .content {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.loc-container .content .col50 {
+    width: 50%;
+    padding: 20px;
+}
+
+.loc-container h2 {
+    font-size: 2.5em;
+}
+
+.loc-container .content span {
+    color: lightskyblue;
+}
+
+.loc-container .content .col50 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -134,56 +177,55 @@ header .nav li a:hover {
     justify-content: center;
 }
 
-.foodmenu {
+.main {
     color: black;
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    flex-direction: column;
     list-style: none;
     justify-content: center;
+    margin: 50px 0px;
 }
 
-.foodmenu-container {
+.main-container {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin: 50px;
 }
 
-.foodmenu-container h2 {
-    font-size: 2.5em;
+.main-container h2 {
 }
 
-.foodmenu-container span {
-    color: #ff0157;
-    font-size: 1.5em;
+.main-container span {
+    color: lightskyblue;
 }
 
-.foodmenu-btn {
+.main-btn {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin: 50px;
 }
 
-.foodmenu-btn span {
-    background-color: #ff0157;
+.main-btn span {
+    background-color: lightskyblue;
     font-size: x-large;
     padding: 15px;
     text-transform:uppercase;
 }
 
-.foodmenu-btn a {
+.main-btn a {
     text-decoration: none;
     color: #fff;
 }
 
-.foodmenu-btn a:hover {
+.main-btn a:hover {
     text-decoration: none;
     color: #000;
 }
 
-.foodmenu-container p {
+.main-container p {
     margin: 10px;
 }
 
@@ -196,6 +238,26 @@ header .nav li a:hover {
 
 .items-container h2 {
     
+}
+
+.items-container-btn {
+    font-size: 1.5em;
+}
+
+.items-container-btn span {
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.items-container-btn span a {
+    text-decoration: none;
+    color: white;
+}
+
+.items-container-btn span a:hover {
+    text-decoration: none;
+    color: lightskyblue;
 }
 
 .itemcard {
@@ -220,6 +282,12 @@ header .nav li a:hover {
 .img-container {
     width: 100%;
     min-height: 300px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.itemcard:hover .img-container {
+    transform: rotateY(180deg);
 }
 
 .itemcard img {
@@ -245,7 +313,7 @@ header .nav li a:hover {
 }
 
 .experts-container h2 span {
-    color: #ff0157;
+    color: lightskyblue;
     font-size: 1.5em;
 }
 
@@ -256,7 +324,7 @@ header .nav li a:hover {
 .testimonial {
     min-height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-              url('https://i.postimg.cc/k5dZs5jR/bg2.jpg');
+              url('media/images/generated-image-1771282816.jpg');
     background-size: cover;
     padding-bottom: 100px;
 }
@@ -265,22 +333,22 @@ header .nav li a:hover {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 50px;
     padding: 50px;
+    background-color: rgba(255,255,255,0.5);
+    margin: 0 0 50px 0;
 }
 
 .testimonials-container h2 {
-    color: #fff;
+    color: #000;
     font-size: 2.5em;
 }
 
 .testimonials-container h2 span {
-    color: #ff0157;
-    font-size: 1.5em;
+    color: lightskyblue;
 }
 
 .testimonials-container p {
-    color: #fff;
+    color: #000;
     margin: 10px;
 }
 
@@ -300,7 +368,7 @@ header .nav li a:hover {
 }
 
 .testimonial .itemcard span {
-    color: #ff0157;
+    color: lightskyblue;
     font-size: 1.5em;
     font-weight:bold;
 }
@@ -325,7 +393,7 @@ header .nav li a:hover {
 }
 
 .contact-container h2 span {
-    color: #ff0157;
+    color: lightskyblue;
     font-size: 1.5em;
 }
 
@@ -350,7 +418,7 @@ header .nav li a:hover {
 }
 
 .contact .itemcard span {
-    color: #ff0157;
+    color: lightskyblue;
     font-size: 1.5em;
     font-weight:bold;
 }
@@ -389,7 +457,7 @@ header .nav li a:hover {
 .contactform .inputbox input[type="submit"] {
     font-size: 1em;
     color: #fff;
-    background: #ff0157;
+    background: lightskyblue;
     display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
@@ -400,8 +468,8 @@ header .nav li a:hover {
     border: none;
 }
 
-.footer {
-    background-color: #ff0157;
+.footer-container {
+    background-color: lightskyblue;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -410,35 +478,35 @@ header .nav li a:hover {
     padding: 10px 30px;
 }
 
-.footer p {
-    color: #fff;
+.footer-container p {
+    color: darkblue;
 }
 
-.footer ul li {
+.footer-container ul li {
     list-style: none;
 }
 
-.footer ul li a {
-    color: white;
+.footer-container ul li a {
+    color: darkblue;
     list-style: none;
     text-decoration: none;
 }
 
-footer .nav {
+.footer-container .nav {
     display: flex;
     list-style: none;
     gap: 30px;
 }
 
-footer .nav li a {
+.footer-container .nav li a {
     text-decoration: none;
-    color: #fff;
+    color: darkblue;
     font-size: 1em;
     font-weight: 400;
 }
 
-footer .nav li a:hover {
-    color:#000;
+.footer-container .nav li a:hover {
+    color:#555;
 }
 
 .menu-toggle {
