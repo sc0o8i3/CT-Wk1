@@ -111,16 +111,16 @@ header .nav li a:hover {
     border-radius: 10px;
 }
 
-.about {
+.about-container {
     padding: 50px;
 }
 
-.about .content {
+.about-container .content {
     display: flex;
     flex-wrap:wrap;
 }
 
-.about .content .col50 {
+.about-container .content .col50 {
     width: 50%;
     padding: 20px;
 }
@@ -129,12 +129,12 @@ header .nav li a:hover {
     font-size: 2.5em;
 }
 
-.about .content span {
+.about-container .content span {
     color: lightskyblue;
     font-size: 1.5em;
 }
 
-.about .content .col50 img {
+.about-container .content .col50 img {
     width: 20%;
     height: 20%;
     object-fit: cover;
@@ -334,12 +334,12 @@ header .nav li a:hover {
     flex-direction: column;
     text-align: center;
     padding: 50px;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(0,0,0,0.3);
     margin: 0 0 50px 0;
 }
 
 .testimonials-container h2 {
-    color: #000;
+    color: white;
     font-size: 2.5em;
 }
 
@@ -348,7 +348,7 @@ header .nav li a:hover {
 }
 
 .testimonials-container p {
-    color: #000;
+    color: white;
     margin: 10px;
 }
 
@@ -516,6 +516,35 @@ header .nav li a:hover {
 }
 
 @media (max-width:768px) {
+    
+    .banner .content h1 {
+        font-size: 40px;
+        color: lightskyblue;
+    }
+
+    .banner .content h2 {
+        font-size: 30px;
+        color: white;
+    }
+
+    .banner .content .btn {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1em; 
+        margin: 30px;
+
+    }
+
+    .testimonial .itemcard {
+        width: 30%;
+    }
+
+    .btn span {
+        display: flex;
+        justify-content: center;
+    }
+
     /* Showing Hamburger Icon when in mobile view */
     .menu-toggle {
         display: block;
@@ -551,12 +580,33 @@ header .nav li a:hover {
 }
 
 @media (max-width:599px) {
-    .about .content {
+    .about-container .content {
         display: flex;
         flex-direction: column;
     }
 
-    .about .content .col50 {
+    .about-container .content .col50 {
         width: 100%;
+    }
+
+    .logo {
+        font-size: 1.5em;
+    }
+
+    .loc-container .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .loc-container .content .col50 {
+        width: 100%;
+    }
+
+    .menu {
+        top: 50px;
+    }
+
+    .testimonial .itemcard {
+        width: 70%;
     }
 }
