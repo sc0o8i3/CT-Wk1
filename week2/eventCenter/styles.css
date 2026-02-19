@@ -609,4 +609,8 @@ header .nav li a:hover {
     .testimonial .itemcard {
         width: 70%;
     }
+
+    .itemcard {
+        width: 150px;
+    }
 }
