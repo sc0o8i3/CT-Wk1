@@ -205,9 +205,6 @@ header .nav li a:hover {
     margin: 50px;
 }
 
-.main-container h2 {
-}
-
 .main-container span {
     color: lightskyblue;
 }
@@ -273,10 +270,6 @@ header .nav li a:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-}
-
-.items-container h2 {
-    
 }
 
 .items-container-btn {
