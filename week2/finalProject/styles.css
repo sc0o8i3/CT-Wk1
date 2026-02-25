@@ -54,6 +54,20 @@ body {
     text-decoration: none;
 }
 
+.navlinks ul a:hover {
+    color: #fff;
+}
+
+.menu-toggle {
+    color: #1b1b1b;
+    cursor: pointer;
+    display: none;
+}
+
+.menu {
+
+    }
+
 .socials {
     margin-right: 95px;
     display: flex;
@@ -96,7 +110,7 @@ body {
 
 .rightcol {
     width: 40%;
-    padding: 55px;
+    padding: 80px 55px;
 }
 
 .img-container {
@@ -135,4 +149,189 @@ body {
 
 .btn a:hover {
     color:#0b0b0b;
+}
+
+.utf {
+    margin: 109px 0 100px 95px;
+    display: flex;
+}
+
+.main h4 {
+    font-family: IBM Plex Mono;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.14em;
+    vertical-align: bottom;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.companies {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.companies img {
+    width: 160px;
+    height: 60px;
+    angle: 0 deg;
+    opacity: 1;
+    border-width: 1px;
+    border-radius: 6px;
+    border: 1px solid #1B1B1B;
+    padding: 20px 39px;
+    margin: 0 39px 0 0;
+}
+
+@media (max-width:768px) {
+    .menu-toggle {
+        display: block;
+        color: #9c9c9c;
+        margin-left: 180px;
+        font-size: 40px;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        background-color: #1b1b1b;
+        left: 0;
+        right: 0;
+        padding: 20px 0px;
+        z-index: 1;
+    }
+
+    .menu.active {
+        display: flex;
+        font-size: 25px;
+    }
+
+    .navlinks ul {
+        display: none;
+        padding: 20px;
+        width: 768px;
+    }
+
+    .socials img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .leftcol {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    .leftcol h1 {
+        font-size: 55px;
+    }
+
+    .leftcol p {
+        font-size: 25px;
+    }
+
+    .btn {
+        font-size: 25px;
+    }
+
+    .rightcol {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-container {
+        width: 500px;
+        height: 500px;
+    }
+
+    .companies img {
+        width: 450px;
+        height: 210px;
+        margin: 10px;
+    }
+
+    .main h4 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:599px) {
+    .menu-toggle {
+        display: block;
+        color: #9c9c9c;
+        margin-left: 180px;
+        font-size: 70px;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        background-color: #1b1b1b;
+        left: 0;
+        right: 0;
+        padding: 20px 0px;
+        z-index: 1;
+    }
+
+    .menu.active {
+        display: flex;
+        font-size: 30px;
+    }
+
+    .navlinks ul {
+        display: none;
+        padding: 20px;
+        width: 599px;
+    }
+
+    .socials img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .leftcol {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    .leftcol h1 {
+        font-size: 60px;
+    }
+
+    .leftcol p {
+        font-size: 30px;
+    }
+
+    .btn {
+        font-size: 30px;
+    }
+
+    .rightcol {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-container {
+        width: 500px;
+        height: 500px;
+    }
+
+    .companies img {
+        width: 450px;
+        height: 210px;
+        margin: 10px;
+    }
+
+    .main h4 {
+        font-size: 30px;
+    }
 }
