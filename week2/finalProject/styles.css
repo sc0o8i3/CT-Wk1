@@ -84,7 +84,7 @@ body {
 
 .leftcol {
     width: 60%;
-    padding: 131px 32px 131px 95px;
+    padding: 60px 32px 131px 95px;
 }
 
 .leftcol h1 {
@@ -110,7 +110,7 @@ body {
 
 .rightcol {
     width: 40%;
-    padding: 80px 55px;
+    padding: 80px 35px;
 }
 
 .img-container {
@@ -185,6 +185,10 @@ body {
 }
 
 @media (max-width:768px) {
+    .content {
+        width: 100%;
+    }
+
     .menu-toggle {
         display: block;
         color: #9c9c9c;
@@ -223,7 +227,7 @@ body {
     .leftcol {
         width: 100%;
         text-align: center;
-        padding-bottom: 0;
+        padding: 20px;
     }
 
     .leftcol h1 {
@@ -249,9 +253,19 @@ body {
         height: 500px;
     }
 
+    .utf {
+        margin: 20px 20px 100px 20px;
+    }
+
+    .companies {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .companies img {
-        width: 450px;
-        height: 210px;
+        width: 275px;
+        height: 120px;
         margin: 10px;
     }
 
@@ -261,11 +275,15 @@ body {
 }
 
 @media (max-width:599px) {
+    .content {
+        width: 100%;
+    }
+
     .menu-toggle {
         display: block;
         color: #9c9c9c;
-        margin-left: 180px;
-        font-size: 70px;
+        margin-left: 40px;
+        font-size: 30px;
     }
 
     .menu {
@@ -288,30 +306,34 @@ body {
     .navlinks ul {
         display: none;
         padding: 20px;
-        width: 599px;
+        width: 100%;
+    }
+
+    .socials {
+        margin-right: 10px;
     }
 
     .socials img {
-        width: 70px;
-        height: 70px;
+        width: 30px;
+        height: 30px;
     }
 
     .leftcol {
         width: 100%;
         text-align: center;
-        padding-bottom: 0;
+        padding: 20px;
     }
 
     .leftcol h1 {
-        font-size: 60px;
+        font-size: 40px;
     }
 
     .leftcol p {
-        font-size: 30px;
+        font-size: 19px;
     }
 
     .btn {
-        font-size: 30px;
+        font-size: 19px;
     }
 
     .rightcol {
@@ -321,17 +343,29 @@ body {
     }
 
     .img-container {
-        width: 500px;
-        height: 500px;
+        width: 300px;
+        height: 300px;
     }
 
     .companies img {
-        width: 450px;
-        height: 210px;
-        margin: 10px;
+        width: 300px;
+        height: 100px;
+        margin: 10px 0;
     }
 
     .main h4 {
-        font-size: 30px;
+        font-size: 20px;
+    }
+
+    .utf {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .companies {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
